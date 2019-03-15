@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
@@ -164,7 +164,7 @@ header .logo {
 }
 
 .main-content .text-content {
-  width: 50%;
+  width: 100%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -173,6 +173,8 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 100%;
+  height: auto;
 }
 
 .main-content .bottom-content {
@@ -241,7 +243,13 @@ footer {
     width: 100%;
     text-align: center;
     margin-right: 0px;
+    margin-top: 20px;
 
+
+  }
+
+  .text-content {
+    max-width: 100%;
   }
   nav {
     flex-direction: column;
@@ -254,11 +262,22 @@ footer {
     flex-wrap: nowrap;
     margin-top: 20px;
     width: 100%;
+    margin: 0 auto;
+    
   }
   .bottom-content {
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 20px;
+    margin: 0 auto;
+    width: 100%;
+    
+  }
+  .top-content .text-content{
+    margin-bottom: 50px;
+  }
+  .bottom-content .text-content {
+    margin-bottom: 50px;
   }
   
 }
